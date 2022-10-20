@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000;
 const nodeEnv = process.env.NODE_ENV;
 const mySetting = process.env.MY_SETTING;
 const version = 4;
-const server = "heroku";
 
 // setup express
 const app = express();
@@ -75,7 +74,6 @@ app.get("/api/healthcheck", (req, res) => {
     version,
     nodeEnv,
     mySetting,
-    server,
   });
 });
 
